@@ -20,11 +20,11 @@ clusterSpec_single = tf.train.ClusterSpec({
 
 clusterSpec_cluster = tf.train.ClusterSpec({
     "ps" : [
-        "host_name0:2222"
+        "node-0.dongxiaoyuhuanyu.michigan-bigdata-pg0.wisc.cloudlab.us:2222"
     ],
     "worker" : [
-        "host_name0:2222",
-        "host_name1:2222"
+        "node-1.dongxiaoyuhuanyu.michigan-bigdata-pg0.wisc.cloudlab.us:2222",
+        "node-2.dongxiaoyuhuanyu.michigan-bigdata-pg0.wisc.cloudlab.us:2222"
     ]
 })
 
